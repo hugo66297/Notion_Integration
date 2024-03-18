@@ -13,7 +13,7 @@ You can easily convert :
 * speed
 * time
 
-Just copy-paste the following URL in notion and click embedded to have the widget :
+Just copy-paste the following URL in notion and chose embedded to create the widget :
 https://hugo66297.github.io/Notion_Integration/Converter/index.html
 
 
