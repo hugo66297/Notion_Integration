@@ -23,6 +23,29 @@ button {
 	width: 90px;
 	
 }
+h1{
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 25px;
+}
+#showLen{
+	color: #fe4a49;
+}
+#showMass{
+    color: #50689b;
+}
+#showVol{
+	color: #4CAF50;
+}
+#showTemp{
+    color: #ff9233;
+}
+#showSpeed{
+	color: #f16a6f;
+}
+#showTime{
+	color: #f8b014;
+}
 
 #length{
 	background-color: #fe4a49;

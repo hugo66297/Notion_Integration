@@ -17,6 +17,12 @@ const resetButton = document.getElementById('reset');
 
 const lengthButton = document.getElementById('length').addEventListener('click', (e) => {
 	input.style.display = 'block';
+	showLen.style.display = 'block';
+    showMass.style.display = 'none';
+    showVol.style.display = 'none';
+    showTemp.style.display = 'none';
+    showSpeed.style.display = 'none';
+    showTime.style.display = 'none';
 	toFahrenheit.style.display = 'none';
 	toCelsius.style.display = 'none';
 	toKelvin.style.display = 'none';
@@ -50,6 +56,12 @@ const lengthButton = document.getElementById('length').addEventListener('click',
 
 const massButton = document.getElementById('mass').addEventListener('click', (e) => {
 	input.style.display = 'block';
+	showLen.style.display = 'none';
+    showMass.style.display = 'block';
+    showVol.style.display = 'none';
+    showTemp.style.display = 'none';
+    showSpeed.style.display = 'none';
+    showTime.style.display = 'none';
 	toFahrenheit.style.display = 'none';
 	toCelsius.style.display = 'none';
 	toKelvin.style.display = 'none';
@@ -82,6 +94,12 @@ const massButton = document.getElementById('mass').addEventListener('click', (e)
 
 const volumeButton = document.getElementById('volume').addEventListener('click', (e) => {
 	input.style.display = 'block';
+	showLen.style.display = 'none';
+    showMass.style.display = 'none';
+    showVol.style.display = 'block';
+    showTemp.style.display = 'none';
+    showSpeed.style.display = 'none';
+    showTime.style.display = 'none';
 	toFahrenheit.style.display = 'none';
 	toCelsius.style.display = 'none';
 	toKelvin.style.display = 'none';
@@ -113,6 +131,12 @@ const volumeButton = document.getElementById('volume').addEventListener('click',
 
 const temperatureButton = document.getElementById('temperature').addEventListener('click', (e) => {
 	toMetric.style.display = 'none';
+	showLen.style.display = 'none';
+    showMass.style.display = 'none';
+    showVol.style.display = 'none';
+    showTemp.style.display = 'block';
+    showSpeed.style.display = 'none';
+    showTime.style.display = 'none';
 	toImperial.style.display = 'none';
 	hours.style.display = 'none';
 	days.style.display = 'none';
@@ -145,6 +169,12 @@ const temperatureButton = document.getElementById('temperature').addEventListene
 
 const speedButton = document.getElementById('speed').addEventListener('click', (e) => {
 	input.style.display = 'block';
+	showLen.style.display = 'none';
+    showMass.style.display = 'none';
+    showVol.style.display = 'none';
+    showTemp.style.display = 'none';
+    showSpeed.style.display = 'block';
+    showTime.style.display = 'none';
 	toMetric.style.display = 'none';
 	toImperial.style.display = 'none';
 	toFahrenheit.style.display = 'none';
@@ -168,6 +198,12 @@ const speedButton = document.getElementById('speed').addEventListener('click', (
 
 const timeButton = document.getElementById('time').addEventListener('click', (e) => {
 	input.style.display = 'block';
+	showLen.style.display = 'none';
+    showMass.style.display = 'none';
+    showVol.style.display = 'none';
+    showTemp.style.display = 'none';
+    showSpeed.style.display = 'none';
+    showTime.style.display = 'block';
 	toMetric.style.display = 'none';
 	toImperial.style.display = 'none';
 	toFahrenheit.style.display = 'none';
