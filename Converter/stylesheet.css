@@ -1,0 +1,129 @@
+body{
+	background: #3a3a3a;
+}
+
+.container{
+	margin: 0 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+button {
+	border-radius: 9px;
+	background-color: #999;
+	margin: 10px;
+	font-family: 'Oxygen', sans-serif;
+	border: none;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	width: 90px;
+	
+}
+
+#length{
+	background-color: #fe4a49;
+}
+#mass{
+    background-color: #50689b;
+}
+#volume{
+  background-color: #4CAF50;
+}
+#temperature{
+    background-color: #ff9233;
+}
+#speed{
+	background-color: #f16a6f;
+}
+#time{
+	background-color: #f8b014;
+}
+
+button:hover{
+	background-color: #b3b3b3;
+}
+
+.categoryButtons{
+	width: fit-content;
+	margin: auto;
+
+	
+}
+
+.content{
+	width: 1000px;
+	margin: auto;
+	
+}
+
+ .metricImperial, .temp-unit-buttons, .speed-units, .time-units{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	align-content: center;
+	
+	
+	
+}
+
+#toImperial, #toMetric, #toCelsius, #toFahrenheit, #toKelvin, #mileToKm, #kmToMile, #hours, #days {
+	background-color: 	#00b8ff;
+	font-size: 15px;
+}
+
+#toImperial:hover, #toMetric:hover, #toCelsius:hover, #toFahrenheit:hover, #toKelvin:hover, #mileToKm:hover, #kmToMile:hover, #hours:hover, #days:hover{
+	background-color: #009bd6;
+}
+
+input {
+	width: 400px;
+	padding: 10px;
+	border-radius: 9px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Oxygen', sans-serif;
+	margin: auto;
+
+	
+}
+
+
+#output{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 15px;
+	text-align: left;
+	margin: auto;
+	padding: 10px;
+	width: 300px;
+	background-color: #fff;
+	border-radius: 9px;
+}
+
+
+
+#reset{
+	background-color: #c34a41;
+	color: #fff;
+	border: none;
+	margin: 15px auto;
+
+}
+
+#reset:hover{
+	background-color: #b34a41;
+}
+
+/*@media only screen and (min-width: 320px) and (max-width:480px), (orientation: portrait) {
+	.content{
+		width: 50%;
+	}
+	#toImperial, #toMetric, #toCelsius, #toFahrenheit, #toKelvin, #mileToKm, #kmToMile, #hours, #days {
+		font-size: 16px;
+	}
+	
+}*/
+
