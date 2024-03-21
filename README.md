@@ -26,7 +26,11 @@ From Jenjen's one, I've improved :
 
 ## Password Generator :
 Because you need strong, unique and secure password, here is a fullly random password generator who can help you in your daily work. Add it into your notion dashboard and use it in a few click !
-Concerning the style, I took inspiration on Sikriti Dakua's work ([@dev_loop](https://codepen.io/dev_loop)) but change quite a lot of stuff (see changes below)
+Concerning the style, I took inspiration on Sikriti Dakua's work ([@dev_loop](https://codepen.io/dev_loop)) but change quite a lot of stuff (see changes below).
+You can generate random password and choose to have Lowercase, Uppercase, number or even symbol in your password.
+
+Just copy-paste the following URL in notion and chose embedded to create the widget :
+https://hugo66297.github.io/Notion_Integration/PswGen/index.html
 
 ### Changes :
 What did I change from the original one ?
