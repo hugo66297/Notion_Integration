@@ -16,7 +16,7 @@ You can easily convert :
 Just copy-paste the following URL in notion and chose embedded to create the widget :
 https://hugo66297.github.io/Notion_Integration/Converter/index.html
 
-### Changes :
+### Change log :
 From Jenjen's one, I've improved :
 
 *V1*
@@ -29,16 +29,20 @@ Because you need strong, unique and secure password, here is a fullly random pas
 Concerning the style, I took inspiration on Sikriti Dakua's work ([@dev_loop](https://codepen.io/dev_loop)) but change quite a lot of stuff (see changes below).
 You can generate random password and choose to have Lowercase, Uppercase, number or even symbol in your password.
 
+*Do not store your password in clear in notion. (encrypt it as soon as possible !)*
 Just copy-paste the following URL in notion and chose embedded to create the widget :
 https://hugo66297.github.io/Notion_Integration/PswGen/index.html
 
-### Changes :
+### Change log :
 What did I change from the original one ?
 
 *V1*
 * Fonction random improved and BO modified,
 * Style and color slightly modified,
 * Add the possibility to choose the symbols.
+
+*V2*
+* New feature added ! Password info : To know the the strength of your password
 
 # Sources :
 

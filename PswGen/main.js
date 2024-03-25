@@ -14,6 +14,7 @@ const sliderValue = document.querySelector(".length__title");
 // Using Event Listener to apply the fill and also change the value of the text.
 slider.querySelector("input").addEventListener("input", event => {
 	sliderValue.setAttribute("data-length", event.target.value);
+	securityCheck();
 	applyFill(event.target);
 });
 
@@ -63,11 +64,16 @@ function getRandomSymbol() {
 }
 
 // Selecting all the DOM Elements that are necessary -->
-
+//The Big container that contain everything (used to change is height property)
+const bigContainer = document.getElementById("bigdiv");
 // The Viewbox where the result will be shown
 const resultEl = document.getElementById("result");
 // The input slider, will use to change the length of the password
 const lengthEl = document.getElementById("slider");
+// The Viewbow where the security image & info will be shown
+const secDiv = document.getElementById("secDiv");
+// And it's paragraph
+const securityInfo = document.getElementById("securityInfo");
 
 // Checkboxes representing the options that is responsible to create differnt type of password based on user
 const uppercaseEl = document.getElementById("uppercase");
@@ -182,22 +188,115 @@ function disableOnlyCheckbox(){
 		}
 	})
 }
-
 [uppercaseEl, lowercaseEl, numberEl, symbolEl].forEach(el => {
 	el.addEventListener('click', () => {
 		disableOnlyCheckbox()
+		securityCheck()
 	})
-})
+});
 
+//function that display the security info
+function securityCheck(){
+	let totalChecked = [uppercaseEl, lowercaseEl, numberEl, symbolEl].filter(el => el.checked)
+	totalChecked.forEach(el => {
+		
+		if(lengthEl.value <= 6){
+			securityStyleChange(1);
+		}else if (lengthEl.value <= 10){
+			if(totalChecked.length <= 2){
+				securityStyleChange(1);
+			}else{
+				securityStyleChange(2);
+			}
+		}else if (lengthEl.value <= 14){
+			if(totalChecked.length == 1){
+				securityStyleChange(1);
+			}else if(totalChecked.length <= 3){
+				securityStyleChange(2);
+			}else{
+				securityStyleChange(3);
+			}
+		}else if (lengthEl.value <= 16){
+			if(totalChecked.length == 1){
+				securityStyleChange(2);
+			}else if(totalChecked.length <= 3){
+				securityStyleChange(3);
+			}else{
+				securityStyleChange(4);
+			}
+		}else if (lengthEl.value <= 24){
+			if(totalChecked.length <= 2){
+				securityStyleChange(3);
+			}else if(totalChecked.length <= 3){
+				securityStyleChange(4);
+			}else{
+				securityStyleChange(5);
+			}
+		}else{
+			if(totalChecked.length == 1){
+				securityStyleChange(3);
+			}else if(totalChecked.length == 2){
+				securityStyleChange(4);
+			}else{
+				securityStyleChange(5);
+			}
+		}
+	})
+}
+function securityStyleChange(val){
+	if(val == 0){
+		securityInfo.innerText = "Bro...u R SUS";
+		secDiv.style.background = "linear-gradient(135deg, #764ba2 0%, #667eea 100%)";
+	} else if (val == 1) {
+		securityInfo.innerText = "Very Weak";
+		secDiv.style.background = "none";
+		secDiv.style.backgroundColor = "#D2636D";
+	} else if (val == 2) {
+		securityInfo.innerText = "Weak";
+		secDiv.style.background = "none";
+		secDiv.style.backgroundColor = "#F0B783";
+	} else if (val == 3) {
+		securityInfo.innerText = "Good";
+		secDiv.style.background = "none";
+		secDiv.style.backgroundColor = "#EDEB9F";
+	} else if (val == 4) {
+		securityInfo.innerText = "Strong";
+		secDiv.style.background = "none";
+		secDiv.style.backgroundColor = "#D6F1AB";
+	} else {
+		securityInfo.innerText = "Very Strong";
+		secDiv.style.background = "none";
+		secDiv.style.backgroundColor = "#9EE451";
+	}
+}
 
 var appear = document.getElementById("appear");
 
-//Event Listener for Symbols
+appear.addEventListener('input', function(){
+	var sym = document.getElementById("choose").value;
+	if (sym.length <= 2) {
+		securityStyleChange(0);
+	}else{
+		securityCheck();
+	}
+});
+
+//display symbol (when checked)
 symbolEl.addEventListener('change', function() {
 	
     if (symbolEl.checked) {
+    	bigContainer.style.height = '660px';
         appear.style.display = 'block';
     } else {
+    	bigContainer.style.height = '600px';
         appear.style.display = 'none';
     }
   });
+
+
+
+//Very Weak   : #D2636D
+//Weak        : #F0B783
+//Good        : #EDEB9F
+//Strong      : #D6F1AB
+//Very Strong : #9EE451
