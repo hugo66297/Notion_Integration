@@ -45,6 +45,10 @@ What did I change from the original one ?
 *V2*
 * New feature added ! Password info : To know the the strength of your password
 
+*V3*
+* Some images are shown if you place your mouse on the strength label (the colorful one). Now, you can visually preview the strength of your password. These images compare your password's strength to your house, guarding against hackers or burglars.
+The images are not my design, they come from [Avast](https://www.avast.com/random-password-generator#pc)
+
 # Sources :
 
 * [Unit Converter](https://codepen.io/jenjen9/pen/yLBNOKB)

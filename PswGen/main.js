@@ -293,7 +293,21 @@ symbolEl.addEventListener('change', function() {
     }
   });
 
+//Display the div with the images :
+document.addEventListener('DOMContentLoaded', function() {
+  var trigger = document.querySelector('.trigger');
+  var popup = document.querySelector('.popup');
+  var popupImage = document.getElementById('popup-image');
 
+  trigger.addEventListener('mouseenter', function() {
+    popup.classList.add('active');
+    popupImage.src = securityInfo.innerText + ".svg";
+  });
+
+  trigger.addEventListener('mouseleave', function() {
+    popup.classList.remove('active');
+  });
+});
 
 //Very Weak   : #D2636D
 //Weak        : #F0B783
