@@ -55,6 +55,7 @@ To create the map, I used [Image Map generator](https://www.image-map.net/)
 
 *V1*
 * Adding Phandalin map from Lost mine of Phandelver.
+https://hugo66297.github.io/Notion_Integration/IntMap/Phandaline/index.html
 
 # Sources :
 
