@@ -57,6 +57,10 @@ To create the map, I used [Image Map generator](https://www.image-map.net/)
 * Adding Phandalin map from Lost mine of Phandelver.
 https://hugo66297.github.io/Notion_Integration/IntMap/Phandaline/index.html
 
+*V1.1*
+* Adding ThunderTree map from Lost mine of Phandelver.
+https://hugo66297.github.io/Notion_Integration/IntMap/ThunderTree/index.html
+
 # Sources :
 
 * [Unit Converter](https://codepen.io/jenjen9/pen/yLBNOKB)
