@@ -61,6 +61,9 @@ https://hugo66297.github.io/Notion_Integration/IntMap/Phandaline/index.html
 * Adding ThunderTree map from Lost mine of Phandelver.
 https://hugo66297.github.io/Notion_Integration/IntMap/ThunderTree/index.html
 
+*V1.1.2*
+* Bug fix -> target="\_parent" to reload the page"
+
 # Sources :
 
 * [Unit Converter](https://codepen.io/jenjen9/pen/yLBNOKB)
