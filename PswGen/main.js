@@ -151,7 +151,10 @@ generateBtn.addEventListener("click", () => {
 	const hasNumber = numberEl.checked;
 	const hasSymbol = symbolEl.checked;
 	generatedPassword = true;
-	resultEl.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
+
+	const finalPassword = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
+	resultEl.innerText = animatePassword(finalPassword);
+
 	copyInfo.style.transform = "translateY(0%)";
 	copyInfo.style.opacity = "0.75";
 	copiedInfo.style.transform = "translateY(200%)";
@@ -244,7 +247,7 @@ function securityCheck(){
 	})
 }
 function securityStyleChange(val){
-	if(val == 0){
+	if(val ==	 0){
 		securityInfo.innerText = "Bro...u R SUS";
 		secDiv.style.background = "linear-gradient(135deg, #764ba2 0%, #667eea 100%)";
 	} else if (val == 1) {
@@ -293,6 +296,35 @@ symbolEl.addEventListener('change', function() {
     }
   });
 
+//Take a random char from a list for the animation
+function generateRandomChar() {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+{}":?><;.,';
+  return chars.charAt(Math.floor(Math.random() * chars.length));
+}
+
+// fonction responsible of the animation when generating a password
+function animatePassword(finalPassword) {
+  const letters = finalPassword.split('');
+  let iterations = 0;
+
+  const animationInterval = setInterval(() => {
+    resultEl.innerText = letters.map((char, i) => {
+      // Stabilise chaque lettre une à une
+      if (iterations > i) {
+        return char;
+      }
+      // Affiche un caractère aléatoire jusqu'à stabilisation
+      return generateRandomChar();
+    }).join('');
+
+    if (iterations >= letters.length) {
+      clearInterval(animationInterval);
+    }
+
+    iterations += 0.5; // Ajuste pour ralentir ou accélérer l'animation
+  }, 50); // Vitesse de l'animation (en millisecondes)
+}
+
 //Display the div with the images :
 document.addEventListener('DOMContentLoaded', function() {
   var trigger = document.querySelector('.trigger');
@@ -314,3 +346,4 @@ document.addEventListener('DOMContentLoaded', function() {
 //Good        : #EDEB9F
 //Strong      : #D6F1AB
 //Very Strong : #9EE451
+

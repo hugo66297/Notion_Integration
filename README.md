@@ -19,7 +19,7 @@ https://hugo66297.github.io/Notion_Integration/Converter/index.html
 ### Changelog :
 From Jenjen's one, I've improved :
 
-*V1*
+*V1 - fully functional*
 * The style, by adding many colors to improve the HMI,
 * Add titles for each sections, to know on wich page you are,
 * Highlight the most used units. 
@@ -37,23 +37,26 @@ https://hugo66297.github.io/Notion_Integration/PswGen/index.html
 ### Changelog :
 What did I change from the original one ?
 
-*V1*
+*V1 - Core of the generator*
 * Fonction random improved and BO modified,
 * Style and color slightly modified,
 * Add the possibility to choose the symbols.
 
-*V2*
+*V2 -additional informations*
 * New feature added ! Password info : To know the the strength of your password
 
-*V3*
+*V3 - style improvement*
 * Some images are shown if you place your mouse on the strength label (the colorful one). Now, you can visually preview the strength of your password. These images compare your password's strength to your house, guarding against hackers or burglars.
 The images are not my design, they come from [Avast](https://www.avast.com/random-password-generator#pc)
+
+*V3.1*
+* Just added a new animation when the Generate button is clicked. Check it out!
 
 ## Interactive Map :
 Here are some clickable map for donjon and dragon, so I can click on the location and be transported to the description of the place. The only thing you'll have to do if you want to use it is to change the URL of the places.
 To create the map, I used [Image Map generator](https://www.image-map.net/)
 
-*V1*
+*V1 - Core of clickable map*
 * Adding Phandalin map from Lost mine of Phandelver.
 https://hugo66297.github.io/Notion_Integration/IntMap/Phandaline/index.html
 
